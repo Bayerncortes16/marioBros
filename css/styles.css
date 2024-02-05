@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 13%, rgba(0,212,255,1) 56%);
+    height: 100vh;
+}
+
+@font-face {
+    font-family: Mario;
+    src: url(/fonts/SuperMario256.ttf);
+}
+
+h1 {
+    font-family: Mario;
+    font-size: 5rem;
+}
+
+.amarillo {
+    color: yellow;
+    -webkit-text-stroke: 5px;
+    -webkit-text-stroke-color: black;
+}
+
+.verde {
+    color: greenyellow;
+    -webkit-text-stroke: 5px;
+    -webkit-text-stroke-color: black;
+}
+
+.azul {
+    color:cornflowerblue
+}
+
+.capa0 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+}
+
+.capa1 {
+    position: absolute;
+    left: 10px;
+    top: 100px;
+    z-index: 1;
+}
+
+.capa2 {
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    z-index: 2;
+}
+
+.capa3 {
+    position: absolute;
+    left: 70px;
+    top: 215px;
+    width: calc(50% - 150px);
+    z-index: 3;
+
+}
+
+.capa4 {
+    position: absolute;
+    left: 100px;
+    bottom: 34px;
+    width: calc(50% - 150px);
+    z-index: 3;
+}
+
+.anima1{
+    position: relative;
+    animation: tortuga 5s infinite;
+}
+
+@keyframes tortuga {
+    0% {left: 0;}
+    25% {left: 800px;}
+    50% {left: 600px; right: 50px;}
+    75% {left: 50px; right: 0;}
+    100% {left: 400px; right: 50px;}
+}
+
+.caminar{
+    position: absolute;
+    animation: Mario 10s infinite;
+}
+
+@keyframes Mario {
+    0% {left: 0%;}
+
+    10% {left: 10%; }
+
+    20% {left: 20%;}
+º1ºººº
+    30% {left: 30%;}
+
+    40% {left: 40%;}
+
+    50% {left: 50%;}
+
+    60% {left: 60%;}
+
+    70% {left: 70%;}
+
+    80% {left: 80%;}
+
+    90% {left: 90%;}
+
+    100% {left: 100%;}
+}
+
+@media only screen and (min-width: 600px) {
+    .capa1{
+        font-size: 65px;  
+    }
+    .capa2 {
+        font-size: 55px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (min-width: 400px){
+    .capa3{
+         width: calc(35% - 150px);
+    }
+    .capa2 {
+        
+    }
+}
+
+.audio-container {
+    width: 30%;
+    background-color: blue;
+    height: 12vh;
+    margin: 227px 570px;
+    align-items: center;
+    padding: 34px 34px;
+    border-radius: 10%;
+}
